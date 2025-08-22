@@ -2,14 +2,14 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Logo } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
-  role: "Design Engineer",
+  firstName: "Ahmad",
+  lastName: "Fauzan",
+  name: `Ahmad Fauzan Alghifari`,
+  role: "Backend developer",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
+  email: "fauzanalghifari963@gmail.com",
   location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  languages: ["English | B1 Level", "Bahasa | Native"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter: Newsletter = {
@@ -29,18 +29,18 @@ const social: Social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/fazghfr/",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/ahmad-fauzan-alghifari",
   },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
-  },
+  // {
+  //   name: "Threads",
+  //   icon: "threads",
+  //   link: "https://www.threads.com/@once_ui",
+  // },
   {
     name: "Email",
     icon: "email",
@@ -90,7 +90,7 @@ const about: About = {
     display: true,
   },
   calendar: {
-    display: true,
+    display: false,
     link: "https://cal.com",
   },
   intro: {
@@ -98,111 +98,149 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for
-        transforming complex challenges into simple, elegant design solutions.
-        Her work spans digital interfaces, interactive experiences, and the
-        convergence of design and technology.
+        A recent backend development graduate with a passion for building
+        and deploying full-stack web applications. His work spans the Laravel ecosystem
+        and Go for microservices, with experience in modern DevOps practices and an interest in machine learning.
       </>
     ),
-  },
-  work: {
-    display: true, // set to false to hide this section
-    title: "Work Experience",
-    experiences: [
-      {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
-        achievements: [
-          <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20%
-            increase in user engagement and 30% faster load times.
-          </>,
-          <>
-            Spearheaded the integration of AI tools into design workflows,
-            enabling designers to iterate 50% faster.
-          </>,
-        ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-      {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
-        achievements: [
-          <>
-            Developed a design system that unified the brand across multiple
-            platforms, improving design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line,
-            contributing to a 15% increase in overall company revenue.
-          </>,
-        ],
-        images: [],
-      },
-    ],
   },
   studies: {
     display: true, // set to false to hide this section
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Sepuluh Nopember Institute of Technology",
+        description: <>Studied Informatics Engineering. (3.66/4.00 GPA) </>,
+      },
+    ],
+  },
+  work: {
+    display: true, // set to false to hide this section
+    title: "Work/Project Experience",
+    experiences: [
+      {
+        company: "Flexoo Software House",
+        timeframe: "2023 - 2024",
+        role: "Backend Developer",
+        achievements: [
+          <>
+            Attained "First Layer" developer designation upon recruitment, representing the highest skill classification based on
+            comprehensive technical interview assessment
+          </>,
+          <>
+            Architected and implemented over 40 RESTful API endpoints utilizing Laravel framework and MySQL database for
+            client project samsulapp.com, a sophisticated multi-role waste management system
+          </>,
+          <>
+            Administered complete end-to-end deployment procedures on Hostinger Virtual Private Server, implementing
+            containerization through Docker and configuring Nginx as load balancer for backend worker processes
+          </>,
+        ],
+        images: [
+          // optional: leave the array empty if you don't want to display images
+          // {
+          //   src: "/images/projects/project-01/cover-01.jpg",
+          //   alt: "Once UI Project",
+          //   width: 16,
+          //   height: 9,
+          // },
+        ],
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        company: "Hyfish | Bangkit Capstone Project",
+        timeframe: "2024",
+        role: "Machine Learning Developer",
+        achievements: [
+          <>
+            Developed sophisticated Natural Language Processing model for detection and filtration of toxic commentary within
+            fishing community forums, with objective of establishing healthier online community environment
+          </>,
+          <>
+            Engineered comprehensive data pipeline through sourcing, cleaning, and integration of two distinct text datasets from
+            Kaggle platform, creating unified training dataset comprising over 1,500 samples
+          </>,
+          <>
+            Achieved robust model performance with 84% validation accuracy, demonstrating effectiveness in identifying toxic
+            language patterns prior to integration into primary application
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "WinayaBot | Discord Bot",
+        timeframe: "2025",
+        role: "Lead Developer",
+        achievements: [
+          <>
+            Designed sophisticated two-service system architecture: Gateway service for processing all incoming commands (ping,
+            help, AI summary) and dedicated API service managing all database interactions for task management functionality
+          </>,
+          <>
+            Implemented comprehensive feature set including collaborative To-Do list management system and AI-powered text
+            summarization capable of condensing extensive text content or website materials
+          </>,
+          <>
+            Utilized contemporary technology stack including Go for backend logic implementation, MySQL for data persistence,
+            REST API for inter-service communication, and Docker for deployment on private Virtual Private Server
+          </>,
+        ],
+        images: [],
       },
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
+    display: false, // set to false to hide this section
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
+        title: "Golang",
         description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
+          <> </>
         ),
         // optional: leave the array empty if you don't want to display images
         images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
+          // {
+          //   src: "/images/projects/project-01/cover-02.jpg",
+          //   alt: "Project image",
+          //   width: 16,
+          //   height: 9,
+          // },
+          // {
+          //   src: "/images/projects/project-01/cover-03.jpg",
+          //   alt: "Project image",
+          //   width: 16,
+          //   height: 9,
+          // },
         ],
       },
       {
-        title: "Next.js",
+        title: "PHP Laravel",
         description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
+          <> </>
         ),
         // optional: leave the array empty if you don't want to display images
         images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
+          // {
+          //   src: "/images/projects/project-01/cover-04.jpg",
+          //   alt: "Project image",
+          //   width: 16,
+          //   height: 9,
+          // },
+        ],
+      },
+      {
+        title: "PHP Laravel",
+        description: (
+            <> </>
+        ),
+        // optional: leave the array empty if you don't want to display images
+        images: [
+          // {
+          //   src: "/images/projects/project-01/cover-04.jpg",
+          //   alt: "Project image",
+          //   width: 16,
+          //   height: 9,
+          // },
         ],
       },
     ],

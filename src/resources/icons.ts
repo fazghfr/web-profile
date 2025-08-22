@@ -14,6 +14,14 @@ import {
   HiOutlineRocketLaunch,
 } from "react-icons/hi2";
 
+import { FaGolang } from "react-icons/fa6";
+import { FaLaravel } from "react-icons/fa";
+import { FcLinux } from "react-icons/fc";
+import { SiNginx } from "react-icons/si";
+import { FaDocker } from "react-icons/fa";
+
+
+
 import {
   PiHouseDuotone,
   PiUserCircleDuotone,
@@ -45,7 +53,12 @@ export const iconLibrary: Record<string, IconType> = {
   threads: FaThreads,
   arrowUpRightFromSquare: HiArrowTopRightOnSquare,
   document: HiOutlineDocument,
-  rocket: HiOutlineRocketLaunch
+  rocket: HiOutlineRocketLaunch,
+  golang : FaGolang,
+  laravel: FaLaravel,
+  linux : FcLinux,
+  docker: FaDocker,
+  nginx : SiNginx,
 };
 
 export type IconLibrary = typeof iconLibrary;

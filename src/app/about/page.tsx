@@ -17,6 +17,15 @@ import TableOfContents from "@/components/about/TableOfContents";
 import styles from "@/components/about/about.module.scss";
 import React from "react";
 
+import { FaGolang } from "react-icons/fa6";
+import { FaLaravel } from "react-icons/fa";
+import { FcLinux } from "react-icons/fc";
+import { SiNginx } from "react-icons/si";
+import { FaDocker } from "react-icons/fa";
+import { SiTensorflow, SiPython } from "react-icons/si";
+
+
+
 export async function generateMetadata() {
   return Meta.generate({
     title: about.title,
@@ -103,6 +112,17 @@ export default function About() {
                 ))}
               </Flex>
             )}
+
+            {/* Main tech stack icons */}
+            <Flex gap="12" wrap horizontal="center">
+              <FaGolang size={28} color="#00ADD8" />
+              <FaLaravel size={28} color="#FF2D20" />
+              <FaDocker size={28} color="#0db7ed" />
+              <SiNginx size={28} color="#009639" />
+              <FcLinux size={28} /> {/* this one already has its own colors */}
+              <SiTensorflow size={28} color="#FF6F00" />
+              <SiPython size={28} color="#3776AB" />
+            </Flex>
           </Column>
         )}
         <Column className={styles.blockAlign} flex={9} maxWidth={40}>
