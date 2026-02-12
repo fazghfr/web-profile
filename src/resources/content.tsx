@@ -66,13 +66,9 @@ const home: Home = {
   },
   subline: (
     <>
-      I'm Selene, a design engineer at{" "}
-      <Logo
-        icon="/trademarks/wordmark-dark.svg"
-        style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}
-      />
-      , where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm Ahmad, a backend developer currently interning at Sinergi Informatika Semen Indonesia,
+      where I maintain e-procurement platforms.
+      <br /> After hours, I build projects with Go, Laravel, and machine learning.
     </>
   ),
 };
@@ -98,9 +94,10 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        A recent backend development graduate with a passion for building
-        and deploying full-stack web applications. His work spans the Laravel ecosystem
-        and Go for microservices, with experience in modern DevOps practices and an interest in machine learning.
+        Backend developer and recent Informatics Engineering graduate from ITS with expertise in
+        Laravel/React and Go. Currently maintaining e-procurement platforms at Sinergi Informatika,
+        with experience in REST API development, PostgreSQL optimization, and Docker deployment.
+        Passionate about building scalable systems and exploring machine learning applications.
       </>
     ),
   },
@@ -109,8 +106,12 @@ const about: About = {
     title: "Studies",
     institutions: [
       {
-        name: "Sepuluh Nopember Institute of Technology",
-        description: <>Studied Informatics Engineering. (3.66/4.00 GPA) </>,
+        name: "Institut Teknologi Sepuluh Nopember (ITS)",
+        description: <>Bachelor of Informatics Engineering (Jul 2021 - Sep 2025) with GPA 3.66/4.00. Final thesis on Dynamic Deep Graph Convolutional Network for Personality Classification. Teaching Assistant for Database System, Operating System, and Computer Networks (3 semesters).</>,
+      },
+      {
+        name: "Bangkit Academy by Google, GoTo, Traveloka",
+        description: <>Machine Learning Path (Feb 2024 - Jul 2024) with average score of 91.86 (A Grade). Completed Google-backed ML curriculum including TensorFlow specialization and Generative AI.</>,
       },
     ],
   },
@@ -119,69 +120,109 @@ const about: About = {
     title: "Work/Project Experience",
     experiences: [
       {
-        company: "Flexoo Software House",
-        timeframe: "2023 - 2024",
-        role: "Backend Developer",
+        company: "Sinergi Informatika Semen Indonesia",
+        timeframe: "Oct 2025 - Present",
+        role: "Developer Intern",
         achievements: [
           <>
-            Attained "First Layer" developer designation upon recruitment, representing the highest skill classification based on
-            comprehensive technical interview assessment
+            Maintained e-procurement platform for mining company handling purchasing requisitions, vendor tendering, and
+            procurement workflows for 15+ internal users and external vendor network
           </>,
           <>
-            Architected and implemented over 40 RESTful API endpoints utilizing Laravel framework and MySQL database for
-            client project samsulapp.com, a sophisticated multi-role waste management system
+            Debugged and resolved 35+ production issues in legacy Laravel/React codebase using Git workflow, managing merge
+            conflicts between fast-moving dev and stable production branches
           </>,
           <>
-            Administered complete end-to-end deployment procedures on Hostinger Virtual Private Server, implementing
-            containerization through Docker and configuring Nginx as load balancer for backend worker processes
-          </>,
-        ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          // {
-          //   src: "/images/projects/project-01/cover-01.jpg",
-          //   alt: "Once UI Project",
-          //   width: 16,
-          //   height: 9,
-          // },
-        ],
-      },
-      {
-        company: "Hyfish | Bangkit Capstone Project",
-        timeframe: "2024",
-        role: "Machine Learning Developer",
-        achievements: [
-          <>
-            Developed sophisticated Natural Language Processing model for detection and filtration of toxic commentary within
-            fishing community forums, with objective of establishing healthier online community environment
+            Analyzed PostgreSQL database schemas and existing code to understand undocumented system behavior and implement
+            accurate fixes
           </>,
           <>
-            Engineered comprehensive data pipeline through sourcing, cleaning, and integration of two distinct text datasets from
-            Kaggle platform, creating unified training dataset comprising over 1,500 samples
-          </>,
-          <>
-            Achieved robust model performance with 84% validation accuracy, demonstrating effectiveness in identifying toxic
-            language patterns prior to integration into primary application
+            Extended automated notification system to support multi-stage procurement alerts (requisition approvals, tender deadlines,
+            vendor notifications)
           </>,
         ],
         images: [],
       },
       {
-        company: "WinayaBot | Discord Bot",
-        timeframe: "2025",
-        role: "Lead Developer",
+        company: "Flexoo Software House",
+        timeframe: "Oct 2024 - Jul 2025",
+        role: "Backend Developer",
         achievements: [
           <>
-            Designed sophisticated two-service system architecture: Gateway service for processing all incoming commands (ping,
-            help, AI summary) and dedicated API service managing all database interactions for task management functionality
+            Developed REST API backend for waste bank management system, handling customer waste transactions and deposit
+            tracking
           </>,
           <>
-            Implemented comprehensive feature set including collaborative To-Do list management system and AI-powered text
-            summarization capable of condensing extensive text content or website materials
+            Designed PostgreSQL database schema with data integrity constraints and query optimization for multi-user operations
           </>,
           <>
-            Utilized contemporary technology stack including Go for backend logic implementation, MySQL for data persistence,
-            REST API for inter-service communication, and Docker for deployment on private Virtual Private Server
+            Collaborated with frontend team to define and implement API contracts, ensuring seamless integration across 40+ endpoints
+          </>,
+          <>
+            Deployed application to Linux VPS using Docker and Nginx, managing production environments
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "AI CV Analyzer",
+        timeframe: "Oct 2025",
+        role: "Personal Project",
+        achievements: [
+          <>
+            Built resume screening tool that analyzes candidate CVs against job descriptions using LLM-based matching
+          </>,
+          <>
+            Implemented semantic search to identify relevant skills and experience across resume sections
+          </>,
+          <>
+            Developed REST API using Go (Gin framework) with Python service for LLM processing and asynchronous job handling
+          </>,
+          <>
+            Containerized application with Docker for consistent deployment across environments
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "WinayaBot - Discord Task Management Bot",
+        timeframe: "Aug 2025",
+        role: "Personal Project",
+        achievements: [
+          <>
+            Built Discord bot for personal task management with LLM-powered natural language task creation and reminders
+          </>,
+          <>
+            Developed Go backend with MySQL database for persistent todo storage across Discord sessions
+          </>,
+          <>
+            Integrated LLM service to parse conversational task inputs (e.g., "remind me to call mom tomorrow at 3pm")
+          </>,
+          <>
+            Deployed to Linux VPS using Docker
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Hyfish - Bangkit Program Capstone Project",
+        timeframe: "Feb 2024 - Jul 2024",
+        role: "Machine Learning Developer",
+        achievements: [
+          <>
+            Built toxic comment detection model using RNN (LSTM/GRU) with TensorFlow to enable automated content moderation for
+            forum discussions
+          </>,
+          <>
+            Collected and preprocessed text datasets from Kaggle, handling data cleaning and class balancing for binary classification
+            task
+          </>,
+          <>
+            Achieved 84% validation accuracy on toxic language detection, contributing 1 of 3 ML models (alongside fish species and
+            freshness classifiers)
+          </>,
+          <>
+            Collaborated with mobile and cloud team to integrate model API into Android application
           </>,
         ],
         images: [],
@@ -231,7 +272,7 @@ const about: About = {
       {
         title: "PHP Laravel",
         description: (
-            <> </>
+          <> </>
         ),
         // optional: leave the array empty if you don't want to display images
         images: [
